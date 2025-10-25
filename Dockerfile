@@ -14,7 +14,7 @@ RUN npm ci --omit=dev || npm i --only=production
 COPY . .
 
 # 컨테이너 내부 포트(문서화 목적) – 실행 시에는 $PORT 사용
-EXPOSE 8090
+EXPOSE 8080
 
 # 플랫폼이 주입하는 PORT 환경변수 사용
 ENV NODE_ENV=production
