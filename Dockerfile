@@ -1,5 +1,5 @@
 # Multi-stage build for Java application
-FROM gradle:8.5-jdk17 AS builder
+FROM gradle:8.5-amazoncorretto-17 AS builder
 
 # 작업 디렉토리 설정
 WORKDIR /app
